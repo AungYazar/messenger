@@ -1,0 +1,139 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255,255,255,.98);
+    opacity: 0.9;
+}
+.mainContainer{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.logoContainer{
+    width: 50px;
+    height: 50px;
+}
+.logo{
+    width: 100%;
+}
+.menuItem{
+    text-decoration: none;
+    margin-left: 30px;
+    color: inherit;
+    font-size: 16px;
+}
+.menuItem:hover{
+    border-bottom-style: solid;
+}
+.mobilemenucontainer{
+    display: none;
+}
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left{
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 50px;
+}
+.inner{
+    width: 50%;
+}
+.titleheader{
+    margin-bottom: 20px;
+    color: mediumspringgreen;
+}
+.description{
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.blockelement{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    width: 300px;
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    background-color: #fafafa;
+    font-size: 16px;
+}
+.signin{
+    border-radius: 25px;
+    width:100px ;
+    height:40px ;
+    padding:2px 20px 0px ;
+    color:white ;
+    background-color: blue;
+}
+.span{
+    margin-bottom: 10px;
+}
+.password{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.leftimage{
+    width: 40%;
+}
+.right{
+    display: inline-block;
+    width: 50%;
+}
+.rightimage{
+    width: 130%;
+
+}
+.footer{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    padding: 20px;
+    background-color: #fafafa;
+}
+@media ( max-width:767px ){
+    .menuContainer{
+        display: none;
+    }
+    .mobilemenucontainer{
+        display: block;
+    }
+    .left{
+        width: 100%;
+    }
+    .inner{
+        margin: 0 auto;
+        width: 64%;
+    }
+    .right{
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+    }
+    .rightimage{
+        margin: 0 -50%;
+    }
+}
+@media ( max-width:400px ) {
+    .inner{
+        width: 95%;
+    }
+    .footer{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+}
+
